@@ -1,0 +1,16 @@
+com/mprog/util/Logger.java
+ com.mprog.util.Logger
+com/mprog/settings/Settings.java
+ com.mprog.settings.Settings
+com/mprog/App2.java
+ com.mprog.App2
+com/mprog/app/CheckActivity.java
+ com.mprog.app.CheckActivity
+com/mprog/Test.java
+ com.mprog.Test
+com/mprog/app/Client.java
+ com.mprog.app.Client
+com/mprog/app/App.java
+ com.mprog.app.App
+com/mprog/app/ServerThread.java
+ com.mprog.app.ServerThread
