@@ -1,8 +1,12 @@
 package com.mprog.app;
 
+import lombok.AllArgsConstructor;
+import lombok.Setter;
+
 import java.io.IOException;
 import java.net.Socket;
 import java.util.Scanner;
+
 
 
 public class Client implements Runnable{
@@ -10,6 +14,7 @@ public class Client implements Runnable{
     private final String serverHost;
     private final int serverPort;
     private final Scanner scanner;
+    @Setter
     private  boolean flag = false;
 
     public Client(String serverHost, int serverPort, Scanner scanner){
@@ -45,10 +50,10 @@ public class Client implements Runnable{
             e.printStackTrace();
         }
     }
-
-    public void setFlag(boolean flagFrom) {
-       this.flag = flagFrom;
-    }
+//
+//    public void setFlag(boolean flagFrom) {
+//       this.flag = flagFrom;
+//    }
 }
 //            CheckActivity checkActivity = new CheckActivity(socket);
 //            Thread checkActivityThread = new Thread(checkActivity);
