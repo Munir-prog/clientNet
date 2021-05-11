@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 
 public class Client implements Runnable{
-
+    //Check github
     private final String serverHost;
     private final int serverPort;
     private final Scanner scanner;
