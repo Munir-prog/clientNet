@@ -1,5 +1,7 @@
 package com.mprog.app;
 
+import lombok.SneakyThrows;
+
 import java.io.*;
 import java.net.Socket;
 import java.util.LinkedList;
@@ -39,9 +41,10 @@ public class ServerThread implements Runnable {
         }
     }
 
+    @SneakyThrows
     private void showMessage(InputStream in, Scanner serverIn) throws IOException {
-        if(in.available() > 0){
-            if(serverIn.hasNextLine()){
+        if (in.available() > 0){
+            if (serverIn.hasNextLine()){
                 String serverMessage = serverIn.nextLine();
                 if (serverMessage.equals("[Warning:] Your session will be closed!")) {
                     System.out.println(serverMessage);
